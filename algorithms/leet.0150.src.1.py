@@ -9,8 +9,9 @@ class Solution:
                     a + b if s == '+' else
                     a - b if s == '-' else
                     a * b if s == '*' else
-                    a // b if s == '/' else None
+                    abs(a) // abs(b) * (-1 if (a<0)^(b<0) else 1) if s == '/' else None
                 )
             else:
                 stk.append(int(s))
+            # print(stk)
         return stk.pop()
