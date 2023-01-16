@@ -1,3 +1,5 @@
+# https://leetcode.cn/problems/largest-magic-square/
+# 1895. 最大的幻方
 class Solution:
     def largestMagicSquare(self, grid: List[List[int]]) -> int:
         n = len(grid)
